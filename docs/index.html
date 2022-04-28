@@ -19,7 +19,7 @@
             <div class='m-auto'>
               <img style='max-width: 100px;' src="assets/images/logo.svg">
               <h2 class='font-en mt-4'>Use your 1%.</h2>
-              <h6 class='mt-1'>1%の時間でテック技術を身につけよう</h6>
+              <h6 class='mt-1'>1%を使って技術を身につけよう</h6>
               <p class='mt-2'>We Based on KUMAMOTO</p>
               <p class='mt-2'>Since May.1.2022</p>
             </div>
@@ -53,10 +53,13 @@
               <div class='p-line' style='line-height: 2.5;'>
                 <i class="bi bi-person-check d-inline-block me-1"></i>プログラミングに興味がある
                 <i class="bi bi-person-check d-inline-block me-1"></i>ウェブデザインに興味がある
+                <i class="bi bi-person-check d-inline-block me-1"></i>ウェブサイトを作ってみたい
                 <i class="bi bi-person-check d-inline-block me-1"></i>ウェブアプリケーションを作ってみたい
                 <i class="bi bi-person-check d-inline-block me-1"></i>暇な時間を有意義に使いたい
                 <i class="bi bi-person-check d-inline-block me-1"></i>仲間と一緒に学びたい
                 <i class="bi bi-person-check d-inline-block me-1"></i>独学の勉強に飽きてきた
+                <i class="bi bi-person-check d-inline-block me-1"></i>ウェブ関係の仕事に就きたい
+                <i class="bi bi-person-check d-inline-block me-1"></i>熊本県外の友達が欲しい
               </div>
             </div>
             <div class="col-12 col-lg-6 mt-5 mt-lg-0">
@@ -64,10 +67,11 @@
                 <i class="bi bi-person-check d-inline-block me-1"></i>熊本在住/熊本出身
                 <i class="bi bi-person-check d-inline-block me-1"></i>28歳以下
                 <i class="bi bi-person-check d-inline-block me-1"></i>ウェブを学びたい
-                <i class="bi bi-person-check d-inline-block me-1"></i>チーム開発してみたい
-                <i class="bi bi-person-check d-inline-block me-1"></i>デザインを学びたい
+                <i class="bi bi-person-check d-inline-block me-1"></i>チームでサイトを作ってみたい
+                <i class="bi bi-person-check d-inline-block me-1"></i>デザインを勉強してみたい
                 <i class="bi bi-person-check d-inline-block me-1"></i>社会人サークルに参加したい
-                <i class="bi bi-person-check d-inline-block me-1"></i>でも時間もお金もかけたくない
+                <i class="bi bi-person-check d-inline-block me-1"></i>スクールや教材に金はかけたくない
+                <i class="bi bi-person-check d-inline-block me-1"></i>教科書的なことではなく実践的なことをやりたい
               </div>
             </div>
           </div>
@@ -86,7 +90,7 @@
             <div class="overlay-child text-white">
               <h2 class='font-en'>KUMAMOTO</h2>
               <h6 class='mt-1'>熊本在住/熊本出身</h6>
-              <p class='mt-2'>このサークルは熊本に縁のある方のみで構成されています。</p>
+              <p class='mt-2'>このサークルは熊本在住/熊本出身のメンバーのみで構成されています。</p>
             </div>
           </div>
         </div>
@@ -103,7 +107,7 @@
               <div class="col-12 col-lg-7 d-flex align-items-center">
                 <div>
                   <img class='w-100' src="assets/images/02.svg">
-                  <div class="mt-5 mt-lg-3">
+                  <div class="mt-5 mt-lg-4">
                     <script>
                       data = [
                       '高校生',
@@ -119,7 +123,7 @@
                       '友達が欲しい',
                       '技術の相談できる人と知り合いたい',
                       '独学で学んでいるけど寂しい',
-                      'スクールで学んだけど...'
+                      'スクールで学んだけど全然できない'
                       ];
                       for(i=0 ; i<data.length ; i++) {
                         document.write(`<span class='bg-secondary text-white py-2 px-3 rounded-pill me-2 mb-2 d-inline-block'>${data[i]}</span>`);
@@ -152,14 +156,14 @@
             <div class="col-12 col-lg p-lg-5 py-4">
               <img style='aspect-ratio: 1/1;object-fit: cover;' class='shadow-sm' src="assets/images/03.png">
               <h5 class='mt-3'>Web Engineering</h5>
-              <p class='mt-2'>
+              <p class='mt-1'>
                 ウェブサイト開発、ウェブアプリケーション開発など、ウェブに関する技術を習得し、向上させるための活動を行なっています。
               </p>
             </div>
             <div class="col-12 col-lg p-lg-5 py-4">
-              <img style='aspect-ratio: 1/1;object-fit: cover;' class='shadow-sm' src="assets/images/03.png">
+              <img style='aspect-ratio: 1/1;object-fit: cover;' class='shadow-sm' src="assets/images/07.png">
               <h5 class='mt-3'>Web Design</h5>
-              <p class='mt-2'>
+              <p class='mt-1'>
                 ウェブサイトやアプリのデザイン、ロゴの作成等。
                 あくまでウェブサイトやアプリを作るためのデザインですので、チラシ等DTPを作るものではありません。
               </p>
@@ -269,16 +273,14 @@
               <script>
                 data = [
                 {
-                  title: `<i class="bi bi-calendar-check"></i>`,
                   content: `毎月第１週目のどこかでオンライン勉強会（参加は完全に自由で参加料等も一切発生しません）`,
                 },
                 ];
                 for(i=0 ; i<data.length ; i++) {
-                  document.write(`<div class='col-12 col-lg-3 py-3'>`);
+                  document.write(`<div class='col-12 py-3'>`);
                   document.write(`<aside>`);
-                  document.write(`<div class=''>`);
-                  document.write(`<h1 class='mt-2'> ${data[i].title}</h1>`);
-                  document.write(`<p class='mt-2'>${data[i].content}</p>`);
+                  document.write(`<div class='border-start ps-2 py-3'>`);
+                  document.write(`<p>${data[i].content}</p>`);
                   document.write(`</div>`);
                   document.write(`</aside>`);
                   document.write(`</div>`);
