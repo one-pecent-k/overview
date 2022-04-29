@@ -2,14 +2,14 @@
   <html lang="ja">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9D069FN0CD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9D069FN0CD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-9D069FN0CD');
-</script>
+      gtag('config', 'G-9D069FN0CD');
+    </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -162,21 +162,37 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-lg p-lg-5 py-4">
-              <img style='aspect-ratio: 1/1;object-fit: cover;' class='shadow-sm' src="assets/images/03.png">
-              <h5 class='mt-3'>Web Engineering</h5>
-              <p class='mt-1'>
-                ウェブサイト開発、ウェブアプリケーション開発など、ウェブに関する技術を習得し、向上させるための活動を行なっています。
-              </p>
-            </div>
-            <div class="col-12 col-lg p-lg-5 py-4">
-              <img style='aspect-ratio: 1/1;object-fit: cover;' class='shadow-sm' src="assets/images/07.png">
-              <h5 class='mt-3'>Web Design</h5>
-              <p class='mt-1'>
-                ウェブサイトやアプリのデザイン、ロゴの作成等。
-                あくまでウェブサイトやアプリを作るためのデザインですので、チラシ等DTPを作るものではありません。
-              </p>
-            </div>
+            <script>
+              data = [
+              {
+                img: `assets/images/03.png`,
+                title: `HTMLテンプレート開発`,
+                content: `BootstrapをベースにHTML,CSS,Javascriptを使ったテンプレートを開発、配布しています。`,
+              },
+              {
+                img: `assets/images/08.svg`,
+                title: `Wordpressテーマ開発`,
+                content: `BootstrapをベースにしたオリジナルWordpressテーマを開発、配布しています。`,
+              },
+              {
+                img: `assets/images/07.png`,
+                title: `WebDesign`,
+                content: `ウェブサイトやアプリを作るためにロゴやアイコン等デザインツールを使用したクリエイティブ作成。`,
+              },
+              {
+                img: `assets/images/09.svg`,
+                title: `勉強会`,
+                content: `月に１回ほどオンラインで自由参加の勉強会しています。`,
+              },
+              ];
+              for(i=0 ; i<data.length ; i++) {
+                document.write(`<div class="col-12 col-lg-4 p-lg-5 py-4">`);
+                document.write(`<img style='aspect-ratio: 1/1;object-fit: cover;' class='shadow-sm' src="${data[i].img}">`);
+                document.write(`<h5 class='mt-3'>${data[i].title}</h5>`);
+                document.write(`<p class='mt-1'>${data[i].content}</p>`);
+                document.write(`</div>`);
+              }
+            </script>
           </div>
         </div>
       </div>
