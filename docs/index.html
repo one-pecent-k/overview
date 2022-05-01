@@ -281,44 +281,6 @@
   </div>
 </section>
 
-<section class="py-5">
-  <div class="container-fluid py-5">
-    <div class="row">
-      <div class="col-12 col-lg-10 offset-lg-1 p-3">
-        <div class="container-fluid p-0">
-          <div class="row">
-            <div class="col-12">
-              <script>
-                show_subtitle('Schedules','スケジュール感');
-              </script>
-            </div>
-          </div>
-          <div class="container-fluid  mt-3 p-0">
-            <div class="row">
-              <script>
-                data = [
-                {
-                  content: `毎月第１週目のどこかでオンライン勉強会（参加は完全に自由で参加料等も一切発生しません）`,
-                },
-                ];
-                for(i=0 ; i<data.length ; i++) {
-                  document.write(`<div class='col-12 py-3'>`);
-                  document.write(`<aside>`);
-                  document.write(`<div class='border-start ps-2 py-3'>`);
-                  document.write(`<p>${data[i].content}</p>`);
-                  document.write(`</div>`);
-                  document.write(`</aside>`);
-                  document.write(`</div>`);
-                }
-              </script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="py-5 bg-secondary text-white">
   <div class="container-fluid">
     <div class="row">
@@ -335,7 +297,7 @@
             </div>
           </div>
           <div class="container-fluid  mt-lg-5 p-0">
-            <div class="row">
+            <div class="row text-start text-lg-center">
               <script>
                 data = [
                 {
@@ -360,7 +322,7 @@
                 },
                 ];
                 for(i=0 ; i<data.length ; i++) {
-                  document.write(`<div class='col-12 py-3'>`);
+                  document.write(`<div class='col-12 col-lg-3 py-3'>`);
                   document.write(`<aside>`);
                   document.write(`<div class=''>`);
                   document.write(`<h1 class='mt-2'> ${data[i].font}</h1>`);
