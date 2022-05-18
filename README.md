@@ -1,1 +1,2 @@
 - 1%のウェブサイト用リポジトリです。
+- [WPmedia](https://onimaru94.wp.xdomain.jp/)
